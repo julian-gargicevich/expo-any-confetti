@@ -21,21 +21,15 @@ npx expo install expo-any-confetti
 
 ## Usage
 
-**Important:** The `ExpoAnyConfetti` component should be wrapped by a View with the desired size (e.g., `flex: 1`) to define the confetti animation area.
-
 ```tsx
-import React, { useState } from "react";
-import { View, Button } from "react-native";
 import { ExpoAnyConfetti } from "expo-any-confetti";
 
 export default function App() {
-  const [isStarted, setIsStarted] = useState(false);
-
   return (
     <ExpoAnyConfetti
       confettiColors={["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff"]}
       style={StyleSheet.absoluteFillObjec}
-      isStarted={true}
+      isStarted
     />
   );
 }
