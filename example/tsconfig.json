@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-any-confetti": ["../src/index"],
+      "expo-any-confetti/*": ["../src/*"]
+    }
+  }
+}
