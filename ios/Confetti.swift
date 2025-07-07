@@ -5,7 +5,7 @@ import ExpoModulesCore
 public final class ConfettiView: ExpoView {
     public var colors = GoalProgressIndicator().trackGradientColors
     public var intensity: Float = 0.8
-    public var style: ConfettiViewStyle = .large
+    public var size: ConfettiViewSize = .large
     public var isStarted: Bool = false
     public var beginAtTimeZero: Bool = true
 
@@ -55,7 +55,7 @@ public final class ConfettiView: ExpoView {
 
         emitter?.emitterCells = cells
 
-        switch style {
+        switch size {
         case .large:
             emitter?.birthRate = 4
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
@@ -104,10 +104,10 @@ public final class ConfettiView: ExpoView {
         confetti.contentsScale = 1.5
         confetti.setValue("plane", forKey: "particleType")
         confetti.setValue(Double.pi, forKey: "orientationRange")
-        confetti.setValue(Double.pi / 2, forKey: "orientationLongitude")
+        confetti.stysetValue(Double.pi / 2, forKey: "orientationLongitude")
         confetti.setValue(Double.pi / 2, forKey: "orientationLatitude")
 
-        if style == .small {
+        if size == .small {
             confetti.contentsScale = 3.0
             confetti.velocity = CGFloat(70.0 * intensity)
             confetti.velocityRange = CGFloat(20.0 * intensity)
@@ -121,7 +121,7 @@ public final class ConfettiView: ExpoView {
     }
 }
 
-public enum ConfettiViewStyle: String, Enumerable {
+public enum ConfettiViewSize: String, Enumerable {
     case large
     case small
 }

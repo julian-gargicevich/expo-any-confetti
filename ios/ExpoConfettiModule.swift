@@ -11,8 +11,8 @@ public class ExpoAnyConfettiModule: Module {
         view.restartConfettiIfActive()
       }
       
-      Prop("style") { (view: ConfettiView, style: String) in
-        view.style = style == "small" ? .small : .large
+      Prop("size") { (view: ConfettiView, size: String) in
+        view.size = size == "small" ? .small : .large
         view.restartConfettiIfActive()
       }
       

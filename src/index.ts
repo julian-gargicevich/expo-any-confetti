@@ -1,2 +1,2 @@
-export { default as ExpoAnyConfettiView } from "./ExpoAnyConfetti";
-export { ExpoAnyConfettiProps as ExpoAnyConfettiViewProps } from "./ExpoAnyConfetti.types";
+export { default as ExpoAnyConfetti } from "./ExpoAnyConfetti";
+export { ExpoAnyConfettiProps as ExpoAnyConfettiProps } from "./ExpoAnyConfetti.types";

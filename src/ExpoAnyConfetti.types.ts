@@ -1,3 +1,6 @@
+import { ViewStyle } from "react-native";
+
+//extend view
 export interface ExpoAnyConfettiProps {
   /**
    * Array of hex color strings for confetti particles
@@ -9,7 +12,7 @@ export interface ExpoAnyConfettiProps {
    * Size of confetti particles
    * @default 'large'
    */
-  style?: "large" | "small";
+  size?: "large" | "small";
 
   /**
    * Intensity of the confetti animation (0.0 to 1.0)
@@ -28,4 +31,6 @@ export interface ExpoAnyConfettiProps {
    * @default false
    */
   beginAtTimeZero?: boolean;
+
+  style?: ViewStyle;
 }
