@@ -104,7 +104,7 @@ public final class ConfettiView: ExpoView {
         confetti.contentsScale = 1.5
         confetti.setValue("plane", forKey: "particleType")
         confetti.setValue(Double.pi, forKey: "orientationRange")
-        confetti.stysetValue(Double.pi / 2, forKey: "orientationLongitude")
+        confetti.setValue(Double.pi / 2, forKey: "orientationLongitude")
         confetti.setValue(Double.pi / 2, forKey: "orientationLatitude")
 
         if size == .small {

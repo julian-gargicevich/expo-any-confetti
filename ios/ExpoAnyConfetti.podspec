@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name           = 'ExpoAnyConfetti'
-  s.version        = '1.0.2'
+  s.version        = '1.0.3'
   s.summary        = 'A module that displays confetti'
   #indicate that its based on any-distance
   s.description    = 'A module that displays confetti based on any-distance confetti'
